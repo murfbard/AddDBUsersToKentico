@@ -1,0 +1,256 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EC46655D-1E87-425A-9046-83711D1E1FA9}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PullKentico</RootNamespace>
+    <AssemblyName>PullKentico</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CMS.AmazonStorage">
+      <HintPath>E:\Wakefly Drive\Git\Lion Technology\lion-technology-tp-to-kentico-console-app\Lion_TPKenticoUser\bin\CMS.AmazonStorage.dll</HintPath>
+    </Reference>
+    <Reference Include="CMS.Blogs">
+      <HintPath>E:\Wakefly Drive\Git\Lion Technology\lion-technology-tp-to-kentico-console-app\Lion_TPKenticoUser\bin\CMS.Blogs.dll</HintPath>
+    </Reference>
+    <Reference Include="CMS.CKEditor">
+      <HintPath>E:\Wakefly Drive\Git\Lion Technology\lion-technology-tp-to-kentico-console-app\Lion_TPKenticoUser\bin\CMS.CKEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="CMS.CMSHelper">
+      <HintPath>E:\Wakefly Drive\Git\Lion Technology\lion-technology-tp-to-kentico-console-app\Lion_TPKenticoUser\bin\CMS.CMSHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="CMS.CMSSiteMapProvider">
+      <HintPath>E:\Wakefly Drive\Git\Lion Technology\lion-technology-tp-to-kentico-console-app\Lion_TPKenticoUser\bin\CMS.CMSSiteMapProvider.dll</HintPath>
+    </Reference>
+    <Reference Include="CMS.CMSStorage">
+      <HintPath>E:\Wakefly Drive\Git\Lion Technology\lion-technology-tp-to-kentico-console-app\Lion_TPKenticoUser\bin\CMS.CMSStorage.dll</HintPath>
+    </Reference>
+    <Reference Include="CMS.Community">
+      <HintPath>E:\Wakefly Drive\Git\Lion Technology\lion-technology-tp-to-kentico-console-app\Lion_TPKenticoUser\bin\CMS.Community.dll</HintPath>
+    </Reference>
+    <Reference Include="CMS.Controls">
+      <HintPath>E:\Wakefly Drive\Git\Lion Technology\lion-technology-tp-to-kentico-console-app\Lion_TPKenticoUser\bin\CMS.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="CMS.Controls.XmlSerializers">
+      <HintPath>E:\Wakefly Drive\Git\Lion Technology\lion-technology-tp-to-kentico-console-app\Lion_TPKenticoUser\bin\CMS.Controls.XmlSerializers.dll</HintPath>
+    </Reference>
+    <Reference Include="CMS.DatabaseHelper">
+      <HintPath>E:\Wakefly Drive\Git\Lion Technology\lion-technology-tp-to-kentico-console-app\Lion_TPKenticoUser\bin\CMS.DatabaseHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="CMS.DataEngine">
+      <HintPath>E:\Wakefly Drive\Git\Lion Technology\lion-technology-tp-to-kentico-console-app\Lion_TPKenticoUser\bin\CMS.DataEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="CMS.DataProviderSQL">
+      <HintPath>E:\Wakefly Drive\Git\Lion Technology\lion-technology-tp-to-kentico-console-app\Lion_TPKenticoUser\bin\CMS.DataProviderSQL.dll</HintPath>
+    </Reference>
+    <Reference Include="CMS.Ecommerce">
+      <HintPath>E:\Wakefly Drive\Git\Lion Technology\lion-technology-tp-to-kentico-console-app\Lion_TPKenticoUser\bin\CMS.Ecommerce.dll</HintPath>
+    </Reference>
+    <Reference Include="CMS.EcommerceProvider">
+      <HintPath>E:\Wakefly Drive\Git\Lion Technology\lion-technology-tp-to-kentico-console-app\Lion_TPKenticoUser\bin\CMS.EcommerceProvider.dll</HintPath>
+    </Reference>
+    <Reference Include="CMS.EmailEngine">
+      <HintPath>E:\Wakefly Drive\Git\Lion Technology\lion-technology-tp-to-kentico-console-app\Lion_TPKenticoUser\bin\CMS.EmailEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="CMS.EventLog">
+      <HintPath>E:\Wakefly Drive\Git\Lion Technology\lion-technology-tp-to-kentico-console-app\Lion_TPKenticoUser\bin\CMS.EventLog.dll</HintPath>
+    </Reference>
+    <Reference Include="CMS.EventManager">
+      <HintPath>E:\Wakefly Drive\Git\Lion Technology\lion-technology-tp-to-kentico-console-app\Lion_TPKenticoUser\bin\CMS.EventManager.dll</HintPath>
+    </Reference>
+    <Reference Include="CMS.ExtendedControls">
+      <HintPath>E:\Wakefly Drive\Git\Lion Technology\lion-technology-tp-to-kentico-console-app\Lion_TPKenticoUser\bin\CMS.ExtendedControls.dll</HintPath>
+    </Reference>
+    <Reference Include="CMS.FormControls">
+      <HintPath>E:\Wakefly Drive\Git\Lion Technology\lion-technology-tp-to-kentico-console-app\Lion_TPKenticoUser\bin\CMS.FormControls.dll</HintPath>
+    </Reference>
+    <Reference Include="CMS.FormEngine">
+      <HintPath>E:\Wakefly Drive\Git\Lion Technology\lion-technology-tp-to-kentico-console-app\Lion_TPKenticoUser\bin\CMS.FormEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="CMS.Forums">
+      <HintPath>E:\Wakefly Drive\Git\Lion Technology\lion-technology-tp-to-kentico-console-app\Lion_TPKenticoUser\bin\CMS.Forums.dll</HintPath>
+    </Reference>
+    <Reference Include="CMS.GlobalEventHelper">
+      <HintPath>E:\Wakefly Drive\Git\Lion Technology\lion-technology-tp-to-kentico-console-app\Lion_TPKenticoUser\bin\CMS.GlobalEventHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="CMS.GlobalHelper">
+      <HintPath>E:\Wakefly Drive\Git\Lion Technology\lion-technology-tp-to-kentico-console-app\Lion_TPKenticoUser\bin\CMS.GlobalHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="CMS.ImportExport">
+      <HintPath>E:\Wakefly Drive\Git\Lion Technology\lion-technology-tp-to-kentico-console-app\Lion_TPKenticoUser\bin\CMS.ImportExport.dll</HintPath>
+    </Reference>
+    <Reference Include="CMS.IO">
+      <HintPath>E:\Wakefly Drive\Git\Lion Technology\lion-technology-tp-to-kentico-console-app\Lion_TPKenticoUser\bin\CMS.IO.dll</HintPath>
+    </Reference>
+    <Reference Include="CMS.ISearchEngine">
+      <HintPath>E:\Wakefly Drive\Git\Lion Technology\lion-technology-tp-to-kentico-console-app\Lion_TPKenticoUser\bin\CMS.ISearchEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="CMS.LicenseProvider">
+      <HintPath>E:\Wakefly Drive\Git\Lion Technology\lion-technology-tp-to-kentico-console-app\Lion_TPKenticoUser\bin\CMS.LicenseProvider.dll</HintPath>
+    </Reference>
+    <Reference Include="CMS.LicenseProvider.XmlSerializers">
+      <HintPath>E:\Wakefly Drive\Git\Lion Technology\lion-technology-tp-to-kentico-console-app\Lion_TPKenticoUser\bin\CMS.LicenseProvider.XmlSerializers.dll</HintPath>
+    </Reference>
+    <Reference Include="CMS.MediaLibrary">
+      <HintPath>E:\Wakefly Drive\Git\Lion Technology\lion-technology-tp-to-kentico-console-app\Lion_TPKenticoUser\bin\CMS.MediaLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="CMS.MembershipProvider">
+      <HintPath>E:\Wakefly Drive\Git\Lion Technology\lion-technology-tp-to-kentico-console-app\Lion_TPKenticoUser\bin\CMS.MembershipProvider.dll</HintPath>
+    </Reference>
+    <Reference Include="CMS.MessageBoard">
+      <HintPath>E:\Wakefly Drive\Git\Lion Technology\lion-technology-tp-to-kentico-console-app\Lion_TPKenticoUser\bin\CMS.MessageBoard.dll</HintPath>
+    </Reference>
+    <Reference Include="CMS.Messaging">
+      <HintPath>E:\Wakefly Drive\Git\Lion Technology\lion-technology-tp-to-kentico-console-app\Lion_TPKenticoUser\bin\CMS.Messaging.dll</HintPath>
+    </Reference>
+    <Reference Include="CMS.MetaWeblogProvider">
+      <HintPath>E:\Wakefly Drive\Git\Lion Technology\lion-technology-tp-to-kentico-console-app\Lion_TPKenticoUser\bin\CMS.MetaWeblogProvider.dll</HintPath>
+    </Reference>
+    <Reference Include="CMS.Newsletter">
+      <HintPath>E:\Wakefly Drive\Git\Lion Technology\lion-technology-tp-to-kentico-console-app\Lion_TPKenticoUser\bin\CMS.Newsletter.dll</HintPath>
+    </Reference>
+    <Reference Include="CMS.Notifications">
+      <HintPath>E:\Wakefly Drive\Git\Lion Technology\lion-technology-tp-to-kentico-console-app\Lion_TPKenticoUser\bin\CMS.Notifications.dll</HintPath>
+    </Reference>
+    <Reference Include="CMS.OnlineMarketing">
+      <HintPath>E:\Wakefly Drive\Git\Lion Technology\lion-technology-tp-to-kentico-console-app\Lion_TPKenticoUser\bin\CMS.OnlineMarketing.dll</HintPath>
+    </Reference>
+    <Reference Include="CMS.OutputFilter">
+      <HintPath>E:\Wakefly Drive\Git\Lion Technology\lion-technology-tp-to-kentico-console-app\Lion_TPKenticoUser\bin\CMS.OutputFilter.dll</HintPath>
+    </Reference>
+    <Reference Include="CMS.Polls">
+      <HintPath>E:\Wakefly Drive\Git\Lion Technology\lion-technology-tp-to-kentico-console-app\Lion_TPKenticoUser\bin\CMS.Polls.dll</HintPath>
+    </Reference>
+    <Reference Include="CMS.PortalControls">
+      <HintPath>E:\Wakefly Drive\Git\Lion Technology\lion-technology-tp-to-kentico-console-app\Lion_TPKenticoUser\bin\CMS.PortalControls.dll</HintPath>
+    </Reference>
+    <Reference Include="CMS.PortalEngine">
+      <HintPath>E:\Wakefly Drive\Git\Lion Technology\lion-technology-tp-to-kentico-console-app\Lion_TPKenticoUser\bin\CMS.PortalEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="CMS.ProjectManagement">
+      <HintPath>E:\Wakefly Drive\Git\Lion Technology\lion-technology-tp-to-kentico-console-app\Lion_TPKenticoUser\bin\CMS.ProjectManagement.dll</HintPath>
+    </Reference>
+    <Reference Include="CMS.Reporting">
+      <HintPath>E:\Wakefly Drive\Git\Lion Technology\lion-technology-tp-to-kentico-console-app\Lion_TPKenticoUser\bin\CMS.Reporting.dll</HintPath>
+    </Reference>
+    <Reference Include="CMS.ResourceManager">
+      <HintPath>E:\Wakefly Drive\Git\Lion Technology\lion-technology-tp-to-kentico-console-app\Lion_TPKenticoUser\bin\CMS.ResourceManager.dll</HintPath>
+    </Reference>
+    <Reference Include="CMS.RESTService">
+      <HintPath>E:\Wakefly Drive\Git\Lion Technology\lion-technology-tp-to-kentico-console-app\Lion_TPKenticoUser\bin\CMS.RESTService.dll</HintPath>
+    </Reference>
+    <Reference Include="CMS.Scheduler">
+      <HintPath>E:\Wakefly Drive\Git\Lion Technology\lion-technology-tp-to-kentico-console-app\Lion_TPKenticoUser\bin\CMS.Scheduler.dll</HintPath>
+    </Reference>
+    <Reference Include="CMS.SearchProviderSQL">
+      <HintPath>E:\Wakefly Drive\Git\Lion Technology\lion-technology-tp-to-kentico-console-app\Lion_TPKenticoUser\bin\CMS.SearchProviderSQL.dll</HintPath>
+    </Reference>
+    <Reference Include="CMS.SettingsProvider">
+      <HintPath>E:\Wakefly Drive\Git\Lion Technology\lion-technology-tp-to-kentico-console-app\Lion_TPKenticoUser\bin\CMS.SettingsProvider.dll</HintPath>
+    </Reference>
+    <Reference Include="CMS.SiteProvider">
+      <HintPath>E:\Wakefly Drive\Git\Lion Technology\lion-technology-tp-to-kentico-console-app\Lion_TPKenticoUser\bin\CMS.SiteProvider.dll</HintPath>
+    </Reference>
+    <Reference Include="CMS.skmMenuControl">
+      <HintPath>E:\Wakefly Drive\Git\Lion Technology\lion-technology-tp-to-kentico-console-app\Lion_TPKenticoUser\bin\CMS.skmMenuControl.dll</HintPath>
+    </Reference>
+    <Reference Include="CMS.Synchronization">
+      <HintPath>E:\Wakefly Drive\Git\Lion Technology\lion-technology-tp-to-kentico-console-app\Lion_TPKenticoUser\bin\CMS.Synchronization.dll</HintPath>
+    </Reference>
+    <Reference Include="CMS.SynchronizationEngine">
+      <HintPath>E:\Wakefly Drive\Git\Lion Technology\lion-technology-tp-to-kentico-console-app\Lion_TPKenticoUser\bin\CMS.SynchronizationEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="CMS.TreeEngine">
+      <HintPath>E:\Wakefly Drive\Git\Lion Technology\lion-technology-tp-to-kentico-console-app\Lion_TPKenticoUser\bin\CMS.TreeEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="CMS.UIControls">
+      <HintPath>E:\Wakefly Drive\Git\Lion Technology\lion-technology-tp-to-kentico-console-app\Lion_TPKenticoUser\bin\CMS.UIControls.dll</HintPath>
+    </Reference>
+    <Reference Include="CMS.URLRewritingEngine">
+      <HintPath>E:\Wakefly Drive\Git\Lion Technology\lion-technology-tp-to-kentico-console-app\Lion_TPKenticoUser\bin\CMS.URLRewritingEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="CMS.VirtualPathHelper">
+      <HintPath>E:\Wakefly Drive\Git\Lion Technology\lion-technology-tp-to-kentico-console-app\Lion_TPKenticoUser\bin\CMS.VirtualPathHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="CMS.VirtualPathProvider">
+      <HintPath>E:\Wakefly Drive\Git\Lion Technology\lion-technology-tp-to-kentico-console-app\Lion_TPKenticoUser\bin\CMS.VirtualPathProvider.dll</HintPath>
+    </Reference>
+    <Reference Include="CMS.WebAnalytics">
+      <HintPath>E:\Wakefly Drive\Git\Lion Technology\lion-technology-tp-to-kentico-console-app\Lion_TPKenticoUser\bin\CMS.WebAnalytics.dll</HintPath>
+    </Reference>
+    <Reference Include="CMS.WebDAV">
+      <HintPath>E:\Wakefly Drive\Git\Lion Technology\lion-technology-tp-to-kentico-console-app\Lion_TPKenticoUser\bin\CMS.WebDAV.dll</HintPath>
+    </Reference>
+    <Reference Include="CMS.WebFarmSync">
+      <HintPath>E:\Wakefly Drive\Git\Lion Technology\lion-technology-tp-to-kentico-console-app\Lion_TPKenticoUser\bin\CMS.WebFarmSync.dll</HintPath>
+    </Reference>
+    <Reference Include="CMS.WebFarmSyncHelper">
+      <HintPath>E:\Wakefly Drive\Git\Lion Technology\lion-technology-tp-to-kentico-console-app\Lion_TPKenticoUser\bin\CMS.WebFarmSyncHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="CMS.WinServiceEngine">
+      <HintPath>E:\Wakefly Drive\Git\Lion Technology\lion-technology-tp-to-kentico-console-app\Lion_TPKenticoUser\bin\CMS.WinServiceEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="CMS.WorkflowEngine">
+      <HintPath>E:\Wakefly Drive\Git\Lion Technology\lion-technology-tp-to-kentico-console-app\Lion_TPKenticoUser\bin\CMS.WorkflowEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="CMS.ZipUtilities">
+      <HintPath>E:\Wakefly Drive\Git\Lion Technology\lion-technology-tp-to-kentico-console-app\Lion_TPKenticoUser\bin\CMS.ZipUtilities.dll</HintPath>
+    </Reference>
+    <Reference Include="Lucene.Net">
+      <HintPath>E:\Wakefly Drive\Git\Lion Technology\lion-technology-tp-to-kentico-console-app\Lion_TPKenticoUser\bin\Lucene.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CDBUser.cs" />
+    <Compile Include="DataPull.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
